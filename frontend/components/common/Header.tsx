@@ -42,17 +42,6 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className="bg-white border-b border-slate-200 sticky top-0 z-30 shadow-xs">
-      {/* Top Clinical Safety Bar */}
-      <div className="bg-amber-500 text-slate-950 text-xs px-4 py-1.5 flex items-center justify-between font-medium">
-        <div className="flex items-center space-x-2 mx-auto sm:mx-0">
-          <ShieldAlert className="w-4 h-4 text-slate-950 shrink-0" />
-          <span>{t.clinicalDisclaimer}</span>
-        </div>
-        <div className="hidden sm:block text-[11px] uppercase tracking-wider font-semibold opacity-90">
-          Assistive Prototype Only
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Hospital Logo & Brand */}
