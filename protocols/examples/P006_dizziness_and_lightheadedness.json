@@ -1,0 +1,56 @@
+{
+  "protocol_id": "P006",
+  "name": "Dizziness and Lightheadedness",
+  "version": "1.0",
+  "category": "GENERAL_MEDICINE",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "dizzy",
+    "dizziness",
+    "faint",
+    "fainting",
+    "lightheaded",
+    "chakkar",
+    "bhraman"
+  ],
+  "required_fields": [
+    "duration",
+    "chest_or_neuro_symptoms"
+  ],
+  "questions": [
+    {
+      "field": "duration",
+      "text": "Did you completely lose consciousness or feel faint?",
+      "text_hi": "क्या आप पूरी तरह बेहोश हो गए थे या सिर्फ चक्कर आए?",
+      "text_mr": "तुम्ही पूर्ण बेशुद्ध झालात की फक्त चक्कर आली?"
+    },
+    {
+      "field": "chest_or_neuro_symptoms",
+      "text": "Do you feel chest pain, shortness of breath, speech difficulty, or weakness on one side?",
+      "text_hi": "क्या सीने में दर्द, सांस लेने में तकलीफ, या एक तरफ कमजोरी लग रही है?",
+      "text_mr": "छातीत दुखणे, श्वास घेण्यास त्रास किंवा एका बाजूला अशक्तपणा वाटतोय का?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Please sit or lie down immediately to prevent falls.",
+      "instruction_hi": "डेमो सूचना: गिरने से बचने के लिए तुरंत बैठ जाएं या लेट जाएं।",
+      "instruction_mr": "डेमो सूचना: पडणे टाळण्यासाठी कृपया ताबडतोब खाली बसा किंवा झोपा."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: Loosen any tight clothing around the neck and notify staff if feeling worse.",
+      "instruction_hi": "डेमो सूचना: गले के पास तंग कपड़े ढीले करें।",
+      "instruction_mr": "डेमो सूचना: मानेजवळील घट्ट कपडे सैल करा."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NEEDS_REVIEW",
+    "trigger_conditions": [
+      "syncope_loss_of_consciousness",
+      "associated_chest_pain",
+      "focal_neurological_deficit"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "protocol_id": "P004",
+  "name": "Minor Injury and Sprain",
+  "version": "1.0",
+  "category": "TRAUMA_FIRST_AID",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "sprain",
+    "twist",
+    "injury",
+    "swelling",
+    "moch",
+    "mar",
+    "lagli"
+  ],
+  "required_fields": [
+    "body_part",
+    "weight_bearing",
+    "swelling_observed"
+  ],
+  "questions": [
+    {
+      "field": "body_part",
+      "text": "Which joint or body part is injured?",
+      "text_hi": "किस जोड़ या अंग में चोट/मोच आई है?",
+      "text_mr": "कोणत्या सांध्याला किंवा अवयवाला दुखापत झाली आहे?"
+    },
+    {
+      "field": "weight_bearing",
+      "text": "Can you put weight on it or move the joint?",
+      "text_hi": "क्या आप उस पर वजन डाल सकते हैं या हिला सकते हैं?",
+      "text_mr": "तुम्ही त्यावर भार देऊ शकता किंवा तो सांधा हलवू शकता का?"
+    },
+    {
+      "field": "swelling_observed",
+      "text": "Is there noticeable rapid swelling or visible deformity?",
+      "text_hi": "क्या कोई असामान्य सूजन या विकृति दिख रही है?",
+      "text_mr": "काही सूज किंवा विकृती दिसत आहे का?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Rest the injured joint and avoid unnecessary movement.",
+      "instruction_hi": "डेमो सूचना: प्रभावित अंग को आराम दें और हिलने-डुलने से बचें।",
+      "instruction_mr": "डेमो सूचना: दुखापत झालेल्या भागाला विश्रांती द्या आणि हालचाल टाळा."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: Apply a cold compress wrapped in a towel for 15 minutes at a time.",
+      "instruction_hi": "डेमो सूचना: तौलिए में लपेटकर 15 मिनट के लिए बर्फ की सिकाई करें।",
+      "instruction_mr": "डेमो सूचना: टॉवेलमध्ये गुंडाळलेला बर्फ 15 मिनिटांसाठी लावा."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NORMAL",
+    "trigger_conditions": [
+      "visible_bone_deformity",
+      "inability_to_bear_weight",
+      "numbness_distal_to_joint"
+    ]
+  }
+}

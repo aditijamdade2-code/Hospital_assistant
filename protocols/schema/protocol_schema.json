@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HospitalProtocol",
+  "type": "object",
+  "required": [
+    "protocol_id",
+    "name",
+    "version",
+    "category",
+    "clinical_validation_status",
+    "keywords",
+    "required_fields",
+    "questions",
+    "guidance",
+    "escalation"
+  ],
+  "properties": {
+    "protocol_id": { "type": "string" },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "category": { "type": "string" },
+    "clinical_validation_status": { "type": "string", "enum": ["DEMO / REQUIRES CLINICAL VALIDATION", "APPROVED"] },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "required_fields": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "text", "text_hi", "text_mr"],
+        "properties": {
+          "field": { "type": "string" },
+          "text": { "type": "string" },
+          "text_hi": { "type": "string" },
+          "text_mr": { "type": "string" }
+        }
+      }
+    },
+    "guidance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step", "instruction", "instruction_hi", "instruction_mr"],
+        "properties": {
+          "step": { "type": "integer" },
+          "instruction": { "type": "string" },
+          "instruction_hi": { "type": "string" },
+          "instruction_mr": { "type": "string" }
+        }
+      }
+    },
+    "escalation": {
+      "type": "object",
+      "required": ["default_priority", "trigger_conditions"],
+      "properties": {
+        "default_priority": { "type": "string" },
+        "trigger_conditions": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

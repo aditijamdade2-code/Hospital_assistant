@@ -1,0 +1,79 @@
+{
+  "protocol_id": "P001",
+  "name": "Minor Cut and Superficial Wound",
+  "version": "1.0",
+  "category": "TRAUMA_FIRST_AID",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "cut",
+    "wound",
+    "scrape",
+    "scratch",
+    "laceration",
+    "cheera",
+    "ghav",
+    "jakhmi",
+    "chot"
+  ],
+  "required_fields": [
+    "body_part",
+    "bleeding_status",
+    "duration",
+    "pain_level"
+  ],
+  "questions": [
+    {
+      "field": "body_part",
+      "text": "Where is the cut located on your body?",
+      "text_hi": "चोट आपके शरीर के किस हिस्से पर लगी है?",
+      "text_mr": "जखम तुमच्या शरीराच्या कोणत्या भागावर झाली आहे?"
+    },
+    {
+      "field": "bleeding_status",
+      "text": "Is the bleeding controlled or is it continuously spurting?",
+      "text_hi": "क्या खून बहना रुक गया है या लगातार बह रहा है?",
+      "text_mr": "रक्तस्त्राव थांबला आहे की सतत वाहत आहे?"
+    },
+    {
+      "field": "duration",
+      "text": "How long ago did this cut happen?",
+      "text_hi": "यह चोट कितनी देर पहले लगी थी?",
+      "text_mr": "ही जखम साधारण किती वेळापूर्वी झाली?"
+    },
+    {
+      "field": "pain_level",
+      "text": "On a scale of 1 to 10, how severe is the pain?",
+      "text_hi": "1 से 10 के पैमाने पर दर्द कितना तेज है?",
+      "text_mr": "1 ते 10 च्या प्रमाणात वेदना किती तीव्र आहे?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Wash hands and gently rinse the minor cut with clean running water.",
+      "instruction_hi": "डेमो सूचना: हाथ धोएं और साफ पानी से हल्के से घाव को धो लें।",
+      "instruction_mr": "डेमो सूचना: हात स्वच्छ धुवा आणि जखम वाहत्या स्वच्छ पाण्याने धुवा."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: Apply gentle direct pressure with a clean cloth or sterile gauze if oozing.",
+      "instruction_hi": "डेमो सूचना: साफ कपड़े या स्टेराइल पट्टी से हल्का दबाव डालें।",
+      "instruction_mr": "डेमो सूचना: स्वच्छ कापडाने किंवा पट्टीने हलका दाब द्या."
+    },
+    {
+      "step": 3,
+      "instruction": "DEMO PLACEHOLDER: Keep the area clean and wait for the nursing triage staff to inspect.",
+      "instruction_hi": "डेमो सूचना: घाव को साफ रखें और नर्स/डॉक्टर के आने तक प्रतीक्षा करें।",
+      "instruction_mr": "डेमो सूचना: जखम स्वच्छ ठेवा आणि वैद्यकीय कर्मचारी तपासणी करेपर्यंत थांबा."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NORMAL",
+    "trigger_conditions": [
+      "uncontrolled_bleeding",
+      "arterial_spurting",
+      "deep_wound_exposing_tissue",
+      "severe_pain_above_7"
+    ]
+  }
+}

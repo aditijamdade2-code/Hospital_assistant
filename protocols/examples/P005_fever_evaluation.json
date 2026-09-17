@@ -1,0 +1,62 @@
+{
+  "protocol_id": "P005",
+  "name": "Fever Evaluation",
+  "version": "1.0",
+  "category": "GENERAL_MEDICINE",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "fever",
+    "temperature",
+    "chills",
+    "bukhar",
+    "taap"
+  ],
+  "required_fields": [
+    "temperature_recorded",
+    "duration",
+    "associated_symptoms"
+  ],
+  "questions": [
+    {
+      "field": "temperature_recorded",
+      "text": "Do you know your measured body temperature, if checked?",
+      "text_hi": "क्या आपने थर्मामीटर से तापमान नापा है? कितना है?",
+      "text_mr": "तुम्ही ताप मोजला आहे का? किती आहे?"
+    },
+    {
+      "field": "duration",
+      "text": "How many days have you had the fever?",
+      "text_hi": "बुखार कितने दिनों से आ रहा है?",
+      "text_mr": "ताप किती दिवसांपासून येत आहे?"
+    },
+    {
+      "field": "associated_symptoms",
+      "text": "Do you have shivering, neck stiffness, rash, or vomiting?",
+      "text_hi": "क्या कंपकंपी, गर्दन में अकड़न, चकत्ते या उल्टी है?",
+      "text_mr": "थंडी वाजणे, मान आखडणे, पुरळ किंवा उलट्या होत आहेत का?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Stay hydrated with small, frequent sips of clean water or oral rehydration.",
+      "instruction_hi": "डेमो सूचना: प्रचुर मात्रा में पानी पिएं और शरीर में पानी की कमी न होने दें।",
+      "instruction_mr": "डेमो सूचना: पुरेसे पाणी प्या आणि विश्रांती घ्या."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: Rest in a well-ventilated, comfortable room until staff triage.",
+      "instruction_hi": "डेमो सूचना: हवादार कमरे में आराम करें।",
+      "instruction_mr": "डेमो सूचना: हवेशीर खोलीत विश्रांती घ्या."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NORMAL",
+    "trigger_conditions": [
+      "fever_over_104F",
+      "stiff_neck_with_headache",
+      "seizures_convulsions",
+      "severe_lethargy"
+    ]
+  }
+}

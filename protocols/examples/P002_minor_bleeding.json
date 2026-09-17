@@ -1,0 +1,62 @@
+{
+  "protocol_id": "P002",
+  "name": "Minor Bleeding",
+  "version": "1.0",
+  "category": "TRAUMA_FIRST_AID",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "bleed",
+    "bleeding",
+    "blood",
+    "khoon",
+    "rakt",
+    "rakta"
+  ],
+  "required_fields": [
+    "body_part",
+    "bleeding_rate",
+    "duration"
+  ],
+  "questions": [
+    {
+      "field": "body_part",
+      "text": "Which body part is bleeding?",
+      "text_hi": "शरीर के किस अंग से खून बह रहा है?",
+      "text_mr": "कोणत्या अवयवातून रक्त येत आहे?"
+    },
+    {
+      "field": "bleeding_rate",
+      "text": "Is the bleeding slow oozing or rapid spurting?",
+      "text_hi": "क्या खून धीरे-धीरे रिस रहा है या तेजी से बह रहा है?",
+      "text_mr": "रक्त हळूहळू पाझरत आहे की वेगाने वाहत आहे?"
+    },
+    {
+      "field": "duration",
+      "text": "How many minutes has it been bleeding continuously?",
+      "text_hi": "लगातार खून बहते हुए कितने मिनट हो गए हैं?",
+      "text_mr": "सतत रक्तस्त्राव सुरू होऊन किती मिनिटे झाली आहेत?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Apply firm, continuous pressure with a clean cloth or bandage.",
+      "instruction_hi": "डेमो सूचना: साफ कपड़े से लगातार दृढ़ दबाव बनाए रखें।",
+      "instruction_mr": "डेमो सूचना: स्वच्छ कापडाने सतत दाब देऊन धरा."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: If safe to do so, elevate the bleeding limb above heart level.",
+      "instruction_hi": "डेमो सूचना: संभव हो तो प्रभावित अंग को दिल के स्तर से ऊपर उठाएं।",
+      "instruction_mr": "डेमो सूचना: शक्य असल्यास तो अवयव हृदयाच्या पातळीपेक्षा वर ठेवा."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NEEDS_REVIEW",
+    "trigger_conditions": [
+      "bleeding_not_stopping_after_10_min",
+      "blood_soaking_through_dressings",
+      "dizziness"
+    ]
+  }
+}

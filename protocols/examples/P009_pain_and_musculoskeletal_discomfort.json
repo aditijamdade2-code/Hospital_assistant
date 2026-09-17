@@ -1,0 +1,65 @@
+{
+  "protocol_id": "P009",
+  "name": "Pain and Musculoskeletal Discomfort Evaluation",
+  "version": "1.0",
+  "category": "GENERAL_MEDICINE",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "pain", "leg pain", "back pain", "arm pain", "body pain", "ache", "aching",
+    "hurts", "sore", "dard", "dukhne", "dukhna", "vedana", "paay dard", "tang dard"
+  ],
+  "required_fields": [
+    "body_part",
+    "duration",
+    "pain_level",
+    "trauma_or_swelling"
+  ],
+  "questions": [
+    {
+      "field": "body_part",
+      "text": "Which part of your body is in pain?",
+      "text_hi": "शरीर के किस हिस्से में दर्द हो रहा है?",
+      "text_mr": "शरीराच्या कोणत्या भागात दुखत आहे?"
+    },
+    {
+      "field": "duration",
+      "text": "How long have you had this pain (hours or days)?",
+      "text_hi": "यह दर्द कितनी देर या कितने दिनों से हो रहा है?",
+      "text_mr": "हे दुखणे किती वेळ किंवा किती दिवसांपासून सुरू आहे?"
+    },
+    {
+      "field": "pain_level",
+      "text": "On a scale of 1 to 10, how severe would you rate the pain?",
+      "text_hi": "1 से 10 के पैमाने पर दर्द कितना तेज है?",
+      "text_mr": "1 ते 10 च्या प्रमाणात वेदना किती तीव्र आहे?"
+    },
+    {
+      "field": "trauma_or_swelling",
+      "text": "Did you recently suffer a fall, hit, or notice visible swelling?",
+      "text_hi": "क्या कोई चोट लगी है, गिरे हैं, या कोई सूजन दिख रही है?",
+      "text_mr": "काही मार लागला आहे का, पडलात का, किंवा सूज आली आहे का?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Rest the affected area in a comfortable position and avoid placing unnecessary strain on it.",
+      "instruction_hi": "डेमो सूचना: दर्द वाले हिस्से को आराम दें और उस पर अधिक दबाव या खिंचाव न डालें।",
+      "instruction_mr": "डेमो सूचना: दुखऱ्या भागाला विश्रांती द्या आणि त्यावर जास्त भार किंवा ताण देऊ नका."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: If comfortable and not contraindicated, you may sit or recline while nursing triage evaluates you.",
+      "instruction_hi": "डेमो सूचना: आरामदायक स्थिति में बैठें या लेटें जब तक डॉक्टर/नर्स आपकी जांच न करें।",
+      "instruction_mr": "डेमो सूचना: आरामदायक स्थितीत बसा किंवा झोपा जोपर्यंत डॉक्टर तपासणी करत नाहीत."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NORMAL",
+    "trigger_conditions": [
+      "severe_pain_above_7",
+      "associated_chest_pain",
+      "inability_to_move_limb"
+    ]
+  }
+}

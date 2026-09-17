@@ -1,0 +1,65 @@
+{
+  "protocol_id": "P003",
+  "name": "Minor Burn",
+  "version": "1.0",
+  "category": "TRAUMA_FIRST_AID",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "burn",
+    "scald",
+    "burned",
+    "jalna",
+    "jal gaya",
+    "bhajla",
+    "pola"
+  ],
+  "required_fields": [
+    "body_part",
+    "burn_source",
+    "blisters_present"
+  ],
+  "questions": [
+    {
+      "field": "body_part",
+      "text": "Where is the burn located?",
+      "text_hi": "जलने का घाव कहाँ पर है?",
+      "text_mr": "भाजलेली जागा कुठे आहे?"
+    },
+    {
+      "field": "burn_source",
+      "text": "What caused the burn (hot liquid, hot object, fire, chemical)?",
+      "text_hi": "जलने का कारण क्या था (गर्म पानी, आग, रसायन)?",
+      "text_mr": "भाजण्याचे कारण काय होते (गरम पाणी, आग, रसायन)?"
+    },
+    {
+      "field": "blisters_present",
+      "text": "Are there blisters or blackened skin visible?",
+      "text_hi": "क्या छाले या त्वचा काली पड़ गई है?",
+      "text_mr": "त्वचेवर फोड आले आहेत का किंवा त्वचा काळी पडली आहे का?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Immediately cool the burn under cool (not ice cold) running water for 10-20 minutes.",
+      "instruction_hi": "डेमो सूचना: जले हुए हिस्से को 10-20 मिनट के लिए ठंडे बहते पानी के नीचे रखें (बर्फ का उपयोग न करें)।",
+      "instruction_mr": "डेमो सूचना: भाजलेल्या भागावर 10-20 मिनिटे थंड वाहते पाणी टाका (बर्फ वापरू नका)."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: Do not pop blisters or apply toothpaste, butter, or ointments.",
+      "instruction_hi": "डेमो सूचना: छालों को न फोड़ें और टूथपेस्ट या तेल न लगाएं।",
+      "instruction_mr": "डेमो सूचना: फोड फोडू नका आणि टूथपेस्ट किंवा मलम लावू नका."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NORMAL",
+    "trigger_conditions": [
+      "facial_burn",
+      "chemical_burn",
+      "electrical_burn",
+      "large_surface_area",
+      "charred_skin"
+    ]
+  }
+}

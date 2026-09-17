@@ -1,0 +1,53 @@
+{
+  "protocol_id": "P007",
+  "name": "Nosebleed Epistaxis",
+  "version": "1.0",
+  "category": "TRAUMA_FIRST_AID",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "nosebleed",
+    "nose bleed",
+    "nak se khoon",
+    "nakatun rakt"
+  ],
+  "required_fields": [
+    "duration",
+    "head_trauma"
+  ],
+  "questions": [
+    {
+      "field": "duration",
+      "text": "How long has your nose been bleeding?",
+      "text_hi": "नाक से कितनी देर से खून बह रहा है?",
+      "text_mr": "नाकातून किती वेळापासून रक्त येत आहे?"
+    },
+    {
+      "field": "head_trauma",
+      "text": "Did you have any recent hit or trauma to your head or face?",
+      "text_hi": "क्या सिर या चेहरे पर कोई चोट लगी है?",
+      "text_mr": "डोक्याला किंवा चेहऱ्याला काही मार लागला आहे का?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Sit upright and lean slightly FORWARD. Do not lean your head back.",
+      "instruction_hi": "डेमो सूचना: सीधे बैठें और थोड़ा आगे झुकें। सिर पीछे न झुकाएं।",
+      "instruction_mr": "डेमो सूचना: सरळ बसा आणि थोडे पुढे वाका. डोके मागे झुकवू नका."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: Firmly pinch the soft part of the nose just below the bridge for 10-15 minutes.",
+      "instruction_hi": "डेमो सूचना: नाक के कोमल हिस्से को 10-15 मिनट तक दबाकर रखें।",
+      "instruction_mr": "डेमो सूचना: नाकाचा मऊ भाग 10-15 मिनिटे घट्ट दाबून धरा."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NORMAL",
+    "trigger_conditions": [
+      "bleeding_exceeding_20_minutes",
+      "post_head_trauma",
+      "difficulty_breathing"
+    ]
+  }
+}

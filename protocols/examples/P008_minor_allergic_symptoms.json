@@ -1,0 +1,56 @@
+{
+  "protocol_id": "P008",
+  "name": "Minor Allergic Symptoms",
+  "version": "1.0",
+  "category": "GENERAL_MEDICINE",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "allergy",
+    "allergic",
+    "rash",
+    "itching",
+    "hives",
+    "khujli"
+  ],
+  "required_fields": [
+    "breathing_status",
+    "lip_tongue_swelling"
+  ],
+  "questions": [
+    {
+      "field": "breathing_status",
+      "text": "Are you experiencing any difficulty breathing, wheezing, or tightness in the throat?",
+      "text_hi": "क्या सांस लेने में कोई तकलीफ, घरघराहट या गले में कसाव महसूस हो रहा है?",
+      "text_mr": "श्वास घेण्यास त्रास किंवा घशात आवळल्यासारखे वाटत आहे का?"
+    },
+    {
+      "field": "lip_tongue_swelling",
+      "text": "Is there any swelling of your lips, face, or tongue?",
+      "text_hi": "क्या आपके होठों, चेहरे या जीभ पर सूजन आ रही है?",
+      "text_mr": "ओठ, चेहरा किंवा जिभेवर सूज आली आहे का?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Avoid any further contact with suspected food, insect sting, or trigger.",
+      "instruction_hi": "डेमो सूचना: संदिग्ध एलर्जी कारक (भोजन, कीड़ा इत्यादि) से दूर रहें।",
+      "instruction_mr": "डेमो सूचना: संशयित ॲलर्जी घटकापासून दूर राहा."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: Remain seated calmly while staff reviews your allergy assessment.",
+      "instruction_hi": "डेमो सूचना: शांतिपूर्वक बैठे रहें जब तक कर्मचारी समीक्षा न करें।",
+      "instruction_mr": "डेमो सूचना: कर्मचारी तपासणी करेपर्यंत शांतपणे बसून राहा."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NORMAL",
+    "trigger_conditions": [
+      "breathing_difficulty_anaphylaxis",
+      "lip_or_tongue_swelling",
+      "throat_constriction",
+      "rapid_progression"
+    ]
+  }
+}

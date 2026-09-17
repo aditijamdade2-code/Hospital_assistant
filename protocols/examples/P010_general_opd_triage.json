@@ -1,0 +1,58 @@
+{
+  "protocol_id": "P010",
+  "name": "General OPD Clinical Triage",
+  "version": "1.0",
+  "category": "GENERAL_MEDICINE",
+  "clinical_validation_status": "DEMO / REQUIRES CLINICAL VALIDATION",
+  "keywords": [
+    "headache", "cough", "cold", "sore throat", "stomach", "stomach ache", "belly",
+    "weakness", "vomiting", "nausea", "fatigue", "unwell", "sick", "khansi", "jukham",
+    "pet dard", "sir dard", "kamzori", "ashaktapana"
+  ],
+  "required_fields": [
+    "duration",
+    "severity",
+    "associated_symptoms"
+  ],
+  "questions": [
+    {
+      "field": "duration",
+      "text": "How many days or hours have you been experiencing these symptoms?",
+      "text_hi": "आपको यह परेशानी कितने दिनों या घंटों से हो रही है?",
+      "text_mr": "आपल्याला हा त्रास किती दिवस किंवा तासांपासून होत आहे?"
+    },
+    {
+      "field": "severity",
+      "text": "How severe are your symptoms (mild, moderate, or severe)?",
+      "text_hi": "यह परेशानी कितनी गंभीर है (हल्की, मध्यम, या बहुत तेज)?",
+      "text_mr": "हा त्रास किती तीव्र आहे (कमी, मध्यम, की खूप जास्त)?"
+    },
+    {
+      "field": "associated_symptoms",
+      "text": "Are you experiencing any other symptoms, such as fever, vomiting, or breathing trouble?",
+      "text_hi": "क्या कोई अन्य लक्षण भी हैं, जैसे बुखार, उल्टी या सांस लेने में परेशानी?",
+      "text_mr": "इतर काही लक्षणे आहेत का, जसे की ताप, उलट्या किंवा श्वास घेण्यास त्रास?"
+    }
+  ],
+  "guidance": [
+    {
+      "step": 1,
+      "instruction": "DEMO PLACEHOLDER: Rest quietly in the waiting area and take small sips of water if not nauseous.",
+      "instruction_hi": "डेमो सूचना: प्रतीक्षा कक्ष में आराम से बैठें और यदि उल्टी न लग रही हो तो थोड़ा पानी पिएं।",
+      "instruction_mr": "डेमो सूचना: प्रतीक्षा कक्षात शांतपणे बसा आणि मळमळ होत नसेल तर थोडे पाणी प्या."
+    },
+    {
+      "step": 2,
+      "instruction": "DEMO PLACEHOLDER: Alert nursing staff immediately if you feel sudden dizziness or breathing changes.",
+      "instruction_hi": "डेमो सूचना: यदि अचानक चक्कर आए या सांस लेने में बदलाव महसूस हो तो तुरंत नर्स को बताएं।",
+      "instruction_mr": "डेमो सूचना: अचानक चक्कर आल्यास किंवा श्वासात बदल जाणवल्यास परिचारिकेला त्वरित कळवा."
+    }
+  ],
+  "escalation": {
+    "default_priority": "NORMAL",
+    "trigger_conditions": [
+      "severe_unbearable_symptoms",
+      "persistent_vomiting_dehydration"
+    ]
+  }
+}
